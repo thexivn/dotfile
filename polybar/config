@@ -21,9 +21,9 @@
 ;=====================================================
 [colors]
 material-foreground = #ffffff 
-material-dark-background = #2a313b
-material-light-background = #414a5900
-material-primary = #5294e2
+material-dark-background = #341f97
+material-light-background = #48dbfbCa
+material-primary = #2e86de
 material-warn = #cc575d
 black = #000000
 
@@ -613,11 +613,11 @@ label-volume = %{T5}%{T-} %percentage:3%%
 label-muted = %{T5}%{T-} %percentage:3%%
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-0 = #10ac84
+bar-volume-foreground-1 = #10ac84
+bar-volume-foreground-2 = #10ac84
+bar-volume-foreground-3 = #10ac84
+bar-volume-foreground-4 = #10ac84
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
