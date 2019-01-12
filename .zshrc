@@ -124,9 +124,3 @@ alias AddXdefConf="cp ~/.Xdefaults ~/Dev/dotfile/dotfile/.Xdefaults"
 alias AddZshConf="cp ~/.zshrc ~/Dev/dotfile/dotfile/.zshrc"
 
 
-
-
-
-alias AddI3CConf="cp ~/.config/i3/config ~/Dev/dotfile/dotfile/i3/config"
-
-
