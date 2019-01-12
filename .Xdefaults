@@ -63,7 +63,7 @@ URxvt.pointerBlank:         true
 
 !!Source https://github.com/Mayccoll/Gogh theme Cobalt2
 
-*background: [70]#000000
+*background: [80]#000000
 *foreground: #ffffff
 *fadeColor: #000000
 *cursorColor: #C8921F

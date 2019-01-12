@@ -4,7 +4,6 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-exec redshift
 exec ~/.screenlayout/DisposizioneSchermi.sh
 # i3 config file (v4)
 #
@@ -165,4 +164,15 @@ exec compton -bc --config ~/.config/compton.conf
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 
 #disable window title
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
+
+# class        		border  backgr. text   indicator child_border
+client.focused 		#5555ff #000000 #ffffff #5555ff #5555ff 
+client.focused_inactive #555555 #000000 #ffffff #555555 #555555
+client.unfocused 	#555555 #000000 #ffffff #555555 #555555
+client.urgent 		#ff005d #000000 #ffffff #ff55ff #ff005d
+
+client.background #000000
+
+exec redshift -l 45.5:9
+exec_always dunst
