@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -101,3 +101,32 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#Edit cnfig file
+alias i3Conf="vim ~/.config/i3/config"
+alias polyConf="vim ~/.config/polybar/config"
+alias xdefConf="vim ~/.Xdefaults"
+alias dunstConf="vim ~/.config/dunst/dunstrc"
+alias zshConf="vim ~/.zshrc"
+#Utility
+alias GitDotScreen="scrot ~/Dev/dotfile/dotfile/screen/TheBegin.jpg"
+alias SysUpdate="yaourt -Syu"
+alias AurUpdate="yaourt -Syu --aur"
+alias cdGitDot="cd ~/Dev/dotfile/dotfile"
+alias home="clear && cd ~"
+#Git config file
+alias AddI3Conf="cp ~/.config/i3/config ~/Dev/dotfile/dotfile/i3/config"
+alias AddPolyConf="cp ~/.config/polybar/config ~/Dev/dotfile/dotfile/polybar/config"
+alias AddDunstConf="cp ~/.config/dunst/dunstrc ~/Dev/dotfile/dotfile/dunst/dunstrc"
+alias AddComptConf="cp ~/.config/compton.conf ~/Dev/dotfile/dotfile/Compton/compton.conf"
+alias AddVimConf="cp ~/.vimrc ~/Dev/dotfile/dotfile/.vimrc"
+alias AddXdefConf="cp ~/.Xdefaults ~/Dev/dotfile/dotfile/.Xdefaults"
+alias AddZshConf="cp ~/.zshrc ~/Dev/dotfile/dotfile/.zshrc"
+
+
+
+
+
+alias AddI3CConf="cp ~/.config/i3/config ~/Dev/dotfile/dotfile/i3/config"
+
+
