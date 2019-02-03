@@ -1,0 +1,9 @@
+#!/bin/bash
+SCELTA=$(echo -e "SI\nNO\nRESTART" | dmenu -l 0 -wr 0.45 -fn heck:size=20 -i -p "Spegnere?" )
+
+case "$SCELTA" in
+	"SI") shutdown now ;;
+	"RESTART") reboot ;;
+esac
+
+

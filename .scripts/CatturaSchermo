@@ -1,0 +1,24 @@
+#!/bin/bash
+SCREEN_PATH=$HOME"/Pictures/Screen"
+SCREEN_NAME=$SCREEN_PATH"/Schermata_"`date +%Y-%m-%d-%H_%M_%S`".jpg"
+SCREEN_TYPE=$(echo -e "FullScreen\nFocussed Window\nSelect\nDotfile GIT" |  dmenu -i -p "Tipo: "  )
+
+if [ ! -d "$SCREEN_PATH" ]; then
+	mkdir "$SCREEN_PATH"
+fi
+
+echo "$SCREEN_TYPE"
+
+case "$SCREEN_TYPE" in
+	"FullScreen") scrot -d 1 "$SCREEN_NAME" ;;
+	"Focussed Window") scrot -d 1 -u "$SCREEN_NAME"  ;;
+	"Select")
+		notify-send -a "Cattura Schermo" "Seleziona su schermo"	
+		scrot -s "$SCREEN_NAME" 
+	;;
+	"Dotfile GIT") GitDotScreen ;;	
+esac
+
+if [ -n "$SCREEN_TYPE" ]; then
+	notify-send -a "Cattura Schermo" "Salvataggio avvenuto con successo" "$SCREEN_NAME"
+fi

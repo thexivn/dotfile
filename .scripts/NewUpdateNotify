@@ -1,0 +1,7 @@
+#!/bin/bash
+N_UPDATE=$( checkupdates | wc -l)
+
+if [[ $N_UPDATES -gt 0 ]]; then
+	notify-send -a "Pacman" "$N_UPDATES aggiornameti disponibili" 
+fi
+

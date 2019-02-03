@@ -153,6 +153,8 @@ bindsym $mod+Shift+XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK
 
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 ##########
+bindsym $mod+Shift+p exec ~/.scripts/CatturaSchermo
+bindsym $mod+Shift+x exec ~/.scripts/dmSpegni
 
 exec polybar -r example
 
@@ -176,3 +178,4 @@ client.background #000000
 
 exec redshift -l 45.5:9
 exec_always dunst
+exec_always --no-startup-id ~/.scripts/NewUpdateNotify

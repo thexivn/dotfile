@@ -71,7 +71,7 @@ font-4 = ${fonts.font-4}
 
 modules-left = user lsp i3 lpd eth ldl title
 modules-center = 
-modules-right = rld memory rsd cpu rsd volume rdp date rsp time
+modules-right = spotify rld memory rsd cpu rsd volume rdp date rsp time
 
 ;=====================================================
 ;   section/base_left_primary
@@ -661,6 +661,11 @@ warn-temperature = 70
 label = %{T5}%{T-} %temperature-c:3%
 label-warn = %{T5}%{T-} %temperature-c:3%
 
+[module/spotify]
+type=custom/script
+exec=~/.scripts/DBusTest
+tail=true
+interval=2
 ;=====================================================
 ;   settings
 ;=====================================================
